@@ -10,6 +10,7 @@ const schema = a.schema({
   Todo: a
     .model({
       content: a.string(),
+      deadline: a.string(), // Format: yyyy/MM/dd
     })
     .authorization((allow) => [allow.guest()]),
 });
